@@ -13,7 +13,7 @@ double arccos(double x)
     double middle = (smaller + bigger) / 2.0;
     double ans = cos(middle);
 
-    while (fabs(ans - x) > 1e-13)
+    while (abs(ans - x) > 1e-13)
     {
         if (ans > x)
         {

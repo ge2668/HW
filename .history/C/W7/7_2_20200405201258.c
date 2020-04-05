@@ -1,7 +1,7 @@
 // 我确认本程序完全由本人独立完成
 // 姓名：葛依然
 // 学号：2019012668
-// 时间：2020年4月5日
+// 时间：2020年3月30日
 
 #include <stdio.h>
 #include <math.h>
@@ -13,7 +13,7 @@ double arccos(double x)
     double middle = (smaller + bigger) / 2.0;
     double ans = cos(middle);
 
-    while (fabs(ans - x) > 1e-13)
+    while (abs(ans - x) > 1e-12)
     {
         if (ans > x)
         {
@@ -33,6 +33,6 @@ int main()
 {
     double x;
     scanf("%lf", &x);
-    printf("%.5lf ", arccos(x));
+    printf("%.5lf", arccos(x));
     return 0;
 }

@@ -13,7 +13,7 @@ double arccos(double x)
     double middle = (smaller + bigger) / 2.0;
     double ans = cos(middle);
 
-    while (fabs(ans - x) > 1e-13)
+    while (abs(ans - x) > 1e-12)
     {
         if (ans > x)
         {
@@ -32,7 +32,11 @@ double arccos(double x)
 int main()
 {
     double x;
-    scanf("%lf", &x);
-    printf("%.5lf ", arccos(x));
+    while (scanf("%lf", &x))
+    {
+        printf("%.5lf", arccos(x));
+        printf("%.5lf\n", acos(x));
+    }
+
     return 0;
 }
