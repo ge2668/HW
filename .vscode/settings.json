@@ -5,6 +5,7 @@
     "chrono": "cpp",
     "complex": "c",
     "ostream": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "iomanip": "cpp"
   }
 }
